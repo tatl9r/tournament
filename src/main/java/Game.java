@@ -32,7 +32,7 @@ public class Game {
             throw new NotRegisteredException("Игрок " + name2 + " не зарегистрирован");
         }
         int strength1 = players.get(player1Num).getStrength();
-        int strength2 = players.get(player1Num).getStrength();
+        int strength2 = players.get(player2Num).getStrength();
 
         if (strength1 == strength2) {
             return 0;

@@ -45,7 +45,7 @@ public class Tests {
 
         int expected = -1;
         Assertions.assertThrows(NotRegisteredException.class, () -> {
-            game.round("Second", "Third");
+            game.round("Ivan", "Sasha");
         });
 
 
@@ -57,7 +57,7 @@ public class Tests {
 
         int expected = -1;
         Assertions.assertThrows(NotRegisteredException.class, () -> {
-            game.round("Forth", "Third");
+            game.round("Irina", "Sasha");
         });
 
 
@@ -99,8 +99,8 @@ public class Tests {
     }
     @Test
     public void whenStrengthSame() {
-        game.register(player1);
         game.register(player4);
+        game.register(player5);
 
 
         int actual = game.round("Irina", "Mikhail");
